@@ -1,20 +1,21 @@
 $(document).ready(function() {
 	// Cross an item off
-	$('.item').click(function(event) {
-		alert('clicked!');
-		if ( $(this).hasClass('done') ) {
-			event.preventDefault();
-			$(this).removeClass('done');
-		} else {
-			event.preventDefault();
-			$(this).addClass('done');
-		}
+	$(document).on('click', '.item', function(event) {
+		event.preventDefault();
+		$(this).toggleClass('done');
 	});
 
 	// Remove it from the list
-	$('.remove').click(function(event) {
+	$(document).on('click', '.remove', function(event) {
 		event.preventDefault();
-		$(this).parent().fadeOut(600);
+		$(this).parent().fadeOut();
+	});
+
+	// Add item from list
+	$('#item_val').keypress(function(event) {
+		if ( event.which == 13 ) {
+			$('button').click();
+		}
 	});
 
 	$('button').click(function() {
