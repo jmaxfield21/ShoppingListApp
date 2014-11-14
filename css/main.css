@@ -1,0 +1,155 @@
+body {
+	background: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: 'Coming Soon', cursive;
+}
+
+.notepad {
+	background: url("../img/legal-pad.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 1100px;
+	width: 1050px;
+	margin: 0 auto;
+}
+
+.title_container {
+	margin: 0 auto;
+	padding-left: 280px;
+	padding-right: 200px;
+	padding-top: 100px;
+	padding-bottom: 10px;
+}
+
+#magnet {
+	vertical-align: middle;
+	width: 90px;
+	height: 87px;
+	float: right;
+	margin-top: -44px;
+	padding-right: 156px;
+}
+
+#help {
+	line-height: 1.2em;
+	background-color: #b4af71;
+	border-radius: 5px;
+}
+
+#help p {
+	margin: 1.1em auto;
+	padding-left: 10px;
+}
+
+#help p:first-child {
+	padding-top: 5px;
+}
+
+#help p:last-child {
+	/* needed to overwrite browser default */
+	margin-bottom: 0.7em !important;
+}
+
+.list_title {
+	font-size: 2.5em;
+	padding-top: 50px;
+}
+
+#input {
+	position: relative;
+}
+
+#input input {
+	border: 2px solid #b4af71; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    background: #fcf6aa;
+    opacity: 0.5;
+    margin: 0 0 10px 0;
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+
+input[type="text"] {
+	padding-left: 6px;
+}
+
+::-webkit-input-placeholder {
+	font-family: 'Coming Soon', cursive;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #000000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	font-family: 'Coming Soon', cursive;
+	font-weight: bold;
+	font-size: 1.1em;  
+	color: #000000;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	font-family: 'Coming Soon', cursive;
+	font-weight: bold;
+	font-size: 1.1em;  
+	color: #000000;
+}
+
+:-ms-input-placeholder {  
+	font-family: 'Coming Soon', cursive;
+	font-weight: bold;
+	font-size: 1.1em;  
+	color: #000000;
+}
+
+button {
+	font-family: 'Coming Soon', cursive;
+	line-height: 1.2em;
+}
+
+.list_container {
+	position: relative;
+	padding-left: 280px;
+	padding-right: 200px;
+	margin-top: -17px;
+}
+
+#list {
+	font-size: 1.5em;
+	margin: 0 auto;
+	padding-left: 0px;
+	line-height: 1.2em;
+	list-style: none;
+}
+
+#list a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.remove {
+	position: relative;
+	height: 15px;
+	width: 15px;
+}
+
+.remove img {
+	height: inherit;
+	width: inherit;
+}
+
+.done {
+	text-decoration: line-through !important;
+}
+
+.item {
+	padding-left: 15px;
+}
